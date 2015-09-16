@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_comment_num"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/txt_black" />
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:background="@color/center_gray" />-->
+
+        <ListView
+            android:paddingTop="15dp"
+            android:id="@+id/commont_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/line"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none"
+            android:layout_marginBottom="60dp"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F3F3F3">
+            <EditText
+                android:id="@+id/edit_comment_content"
+                android:paddingRight="50dp"
+                android:layout_margin="10dp"
+                android:paddingLeft="15dp"
+                android:hint="写评论"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_background"/>
+            <TextView
+                android:id="@+id/tv_comment_send"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="发送"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

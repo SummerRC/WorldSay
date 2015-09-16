@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">世界说</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_country">国家</string>
+    <string name="country_history_choice">历史选择</string>
+    <string name="country_clear_history">清除历史</string>
+    <string name="country_hot">热门国家</string>
+</resources>
